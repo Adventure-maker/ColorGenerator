@@ -6,13 +6,13 @@ let colorsArr = [
 
 window.addEventListener('keypress', e => {
     if (e.keyCode == 32) {
-        let hex = '#'
-        let textCo = '#'
+        let hex = '#';
+        let textCo = '#';
         for (i = 0; i < 6; i++) {
             let bg = Math.floor(Math.random() * colorsArr.length);
-            hex += colorsArr[bg]
+            hex += colorsArr[bg];
             bacground.textContent = hex;
             document.body.style.backgroundColor = hex;
-        }
-    }
-})
+        };
+    };
+});
